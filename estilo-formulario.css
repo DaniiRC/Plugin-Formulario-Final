@@ -1,0 +1,110 @@
+/* Estilo para el contenedor del formulario */
+.contact-form {
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/* Estilo para las etiquetas */
+.contact-form .contact-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+/* Estilo para los campos de texto y email */
+.contact-form .contact-input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+
+.contact-form .contact-input:focus {
+    border-color: #0073aa;
+    outline: none;
+}
+
+
+/* Estilo para el área de texto */
+.contact-form .contact-textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+
+.contact-form .contact-textarea:focus {
+    border-color: #0073aa;
+    outline: none;
+}
+
+
+/* Estilo para la imagen CAPTCHA */
+.contact-form .contact-captcha {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* Estilo para el botón */
+.contact-form .contact-button {
+    display: inline-block;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.contact-form .contact-button:hover {
+    background-color: #005a8c;
+}
+
+
+@media (max-width: 768px) {
+    .fcp-filtro-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .titulo {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

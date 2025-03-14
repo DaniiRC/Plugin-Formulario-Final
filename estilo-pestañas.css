@@ -1,0 +1,204 @@
+/* Manteniendo el diseño original del filtro */
+.fcp-filtro-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Acomoda los elementos a los extremos */
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    border-bottom: 3px solid #0073aa;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Agrega margen a la derecha para balancear */
+}
+
+/* Título "Mensajes Recibidos" alineado a la izquierda */
+.fcp-filtro-form .titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0073aa;
+    margin: 0;
+    flex: 1; /* Ocupa el espacio necesario sin afectar los filtros */
+}
+
+/* Contenedor de los filtros para alinearlos a la derecha */
+.fcp-filtro-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Mayor separación entre elementos */
+}
+
+/* Ajuste del espaciado en los labels */
+.fcp-filtro-form label,
+.fcp-filtro-form select,
+.fcp-filtro-form .button {
+    margin-right: 10px; /* Agrega espacio entre elementos */
+}
+
+/* Ajuste en los selectores */
+.fcp-filtro-form select {
+    padding: 8px 12px; /* Aumenta el espacio interno */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border 0.3s ease;
+    appearance: none; /* Oculta el diseño por defecto del navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    padding-right: 30px; /* Espaciado para que la flecha no se superponga */
+}
+
+/* Al enfocar el selector */
+.fcp-filtro-form select:focus {
+    border-color: #0073aa;
+    outline: none;
+}
+
+/* Estilos para el botón */
+.fcp-filtro-form .button {
+    background-color: #0073aa;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.fcp-filtro-form .button:hover {
+    background-color: #005a8c;
+    color: white;
+}
+
+/* =========================== */
+/* ESTILOS PARA LA TABLA */
+/* =========================== */
+
+.table-container {
+    margin-left: 0px; /* Eliminamos el margen izquierdo */
+    margin-right: 20px !important; /* Forzamos el margen derecho */
+}
+
+table.widefat {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-right: 20px !important; /* Forzamos el margen derecho de la tabla */
+}
+
+/* Letras blancas en los títulos de las columnas */
+table.widefat th {
+    background: #0073aa;
+    color: white !important;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Ajuste en las celdas */
+table.widefat td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle; /* Asegura que el contenido esté alineado al centro */
+    text-align: left;
+}
+
+/* Alineación de la columna de fecha (columna 5) */
+table.widefat td:nth-child(1), /* Fecha Recibido */
+table.widefat th:nth-child(1) {
+    text-align: center; /* Centrado de la fecha en la columna */
+}
+
+/* Alineación de la columna de fecha (columna 5) */
+table.widefat td:nth-child(2), /* Fecha Recibido */
+table.widefat th:nth-child(2) {
+    text-align: center; /* Centrado de la fecha en la columna */
+}
+
+/* Alineación de la columna de fecha (columna 5) */
+table.widefat td:nth-child(3), /* Fecha Recibido */
+table.widefat th:nth-child(3) {
+    text-align: center; /* Centrado de la fecha en la columna */
+}
+
+/* Alineación de la columna de fecha (columna 5) */
+table.widefat td:nth-child(4), /* Fecha Recibido */
+table.widefat th:nth-child(4) {
+    text-align: center; /* Centrado de la fecha en la columna */
+}
+
+/* Alineación de la columna de fecha (columna 5) */
+table.widefat td:nth-child(5), /* Fecha Recibido */
+table.widefat th:nth-child(5) {
+    text-align: center; /* Centrado de la fecha en la columna */
+}
+
+/* Alineación de la columna "Fecha Respondido" (columna 6) */
+table.widefat td:nth-child(6), /* Fecha Respondido */
+table.widefat th:nth-child(6) {
+    text-align: center; /* Centrado de la fecha en la columna */
+}
+
+/* Asegurar que el botón de "Responder" esté alineado con el texto */
+table.widefat td:last-child {
+    text-align: center;
+}
+
+/* Estilos para los botones dentro de la tabla */
+table.widefat .button {
+    background-color: #35b453;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: rgb(102, 102, 102);
+    font-size: 12px;
+}
+
+table.widefat .button:hover {
+    background-color: #218838;
+    color: white;
+}
+
+/* =========================== */
+/*    ESTILO DE VER DETALLES   */
+/* =========================== */
+
+.mensaje-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.mensaje-contenido {
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+.mensaje-contenido h2 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #0073aa;
+}
+.mensaje-contenido p {
+    font-size: 16px;
+}
+.mensaje-fecha {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+.mensaje-remitente {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
